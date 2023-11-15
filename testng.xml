@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Playwright" thread-count="4" parallel="tests" verbose="4">
+	
+    
+    <test name= "WebKit">
+		<parameter name="Browser" value="Webkit"></parameter>
+    <classes>
+      
+      <class name="Umer_Automation_Playwright.click_or_get_specific_tag_element"/>
+    </classes>
+  </test> 
+  <test name= "Chrome">
+		<parameter name="Browser" value="Chrome"></parameter>
+    <classes>
+      
+    <class name="Umer_Automation_Playwright.Capture_all_the_links"/>
+    </classes>
+  </test> 
+ 
+  <test name="Firefox">
+	  
+	  <parameter name="Browser" value="Firefox"></parameter>
+	  <classes>
+		  <class name="Umer_Automation_Playwright.Locators_Eelements"/>
+	  </classes>
+	  
+  </test>
+  </suite>
+ 
